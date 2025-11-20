@@ -62,9 +62,8 @@ jobs:
 
       - name: Deploy documentation to Netlify
         run: |
-          cd documentation
           npm install netlify-cli -g
-          netlify deploy --prod --dir=./
+          netlify deploy --prod --dir=./src/main/resources/static
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}

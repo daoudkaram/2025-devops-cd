@@ -2,7 +2,7 @@ spring:
   application:
     name: tp-cd-2024
   datasource:
-    url: ${DATABASE_JDBC_URL}
+    url: jdbc:postgresql://ep-red-sea-ahh0s7k9-pooler.c-3.us-east-1.aws.neon.tech/neondb?user=neondb_owner&password=npg_aciHVj6W9wJP&sslmode=require&channelBinding=require
   jpa:
     hibernate:
       ddl-auto: create
