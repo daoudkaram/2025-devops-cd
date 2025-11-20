@@ -27,8 +27,7 @@ jobs:
         run: docker build -t myapp .
 
       - name: Build documentation
-        run: |
-          cd documentation
+        run: 
           echo "Doc OK"
 
   deploy:
